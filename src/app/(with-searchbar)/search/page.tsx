@@ -11,7 +11,7 @@ export default async function Page({
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book/search?q=${q}`
   );
-  if (!response.ok) return <>문제가 발생했습니다.</>;
+  if (!response.ok) return <>오류가 발생했습니다.</>;
   const books: BookData[] = await response.json();
   if (books.length < 1) return <>검색 결과가 없습니다.</>;
   else
