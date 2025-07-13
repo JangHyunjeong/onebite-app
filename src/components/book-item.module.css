@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-.container img {
+.cover_img {
   width: 80px;
 }
 
@@ -16,7 +16,7 @@
   font-weight: bold;
 }
 
-.subTitle {
+.subtitle {
   word-break: keep-all;
 }
 
